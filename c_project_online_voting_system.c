@@ -158,7 +158,7 @@ void addCandidates(struct Candidate *candidateDatabase, int *candidateCount, str
         }
 
         // Write updated candidate database to file
-        writeCandidateDatabase(candidateDatabase, *candidateCount, "C:\\Users\\KOKKANTI ARUN KUMAR\\c language\\candidates.txt");
+        writeCandidateDatabase(candidateDatabase, *candidateCount, "candidates.txt");
                        // path should same as in your pc
         printf("Candidates added successfully.\n");
     } else {
@@ -208,8 +208,8 @@ void displayVotingInterface(struct User *userDatabase, int userCount, struct Can
             }
 
             // Write updated databases to files
-            writeUserDatabase(userDatabase, userCount, "C:\\Users\\KOKKANTI ARUN KUMAR\\c language\\users.txt");// path should same as in your pc
-            writeCandidateDatabase(candidateDatabase, candidateCount, "C:\\Users\\KOKKANTI ARUN KUMAR\\c language\\candidates.txt");
+            writeUserDatabase(userDatabase, userCount, "users.txt");// path should same as in your pc
+            writeCandidateDatabase(candidateDatabase, candidateCount, "candidates.txt");
                                                                                  // path should same as in your pc
             printf("Your vote has been registered. Thank you!\n");
         } else {
@@ -270,8 +270,8 @@ int main() {
 
 void runVotingSystem() {
     // Paths to database files
-    const char userDatabasePath[] = "C:\\Users\\KOKKANTI ARUN KUMAR\\c language\\users.txt";// path should same as in your pc
-    const char candidateDatabasePath[] = "C:\\Users\\KOKKANTI ARUN KUMAR\\c language\\candidates.txt";// path should same as in your pc
+    const char userDatabasePath[] = "users.txt";// path should same as in your pc
+    const char candidateDatabasePath[] = "candidates.txt";// path should same as in your pc
 
     while (1) { // Start an infinite loop
         // Read user and candidate databases from files
